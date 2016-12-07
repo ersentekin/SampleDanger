@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F8376C0EA50CDE4E44C7884B80B60CECA1C5B3CD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "836805630CEF3651E2E896736C05AB1599D02DCE" : 9223372036854775807,
+    "F8376C0EA50CDE4E44C7884B80B60CECA1C5B3CD" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EBC521A7-2A5E-4121-8309-E0D350671BF6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "836805630CEF3651E2E896736C05AB1599D02DCE" : "",
+    "F8376C0EA50CDE4E44C7884B80B60CECA1C5B3CD" : "SampleDanger\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SampleDanger",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SampleDanger.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/travisjeffery\/ClangFormat-Xcode",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "836805630CEF3651E2E896736C05AB1599D02DCE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ersentekin\/SampleDanger",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F8376C0EA50CDE4E44C7884B80B60CECA1C5B3CD"
+    }
+  ]
+}
