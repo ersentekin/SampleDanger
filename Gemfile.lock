@@ -1,5 +1,5 @@
 PATH
-  remote: ../danger-code_style_validation
+  remote: SampleDanger/danger-plugins/danger-code_style_validation
   specs:
     danger-code_style_validation (0.0.1)
       danger-plugin-api (~> 1.0)
