@@ -34,6 +34,8 @@ module Danger
       markdown message unless message.empty?
     end
 
+    private
+
     def generate_markdown(title, content)
       markup_message = "####" + title + "\n"
       markup_message += "```\n" + content + "\n``` \n"
@@ -44,7 +46,7 @@ module Danger
       # Parse all patches from diff string
       patches = GitDiffParser.parse(diff_str)
 
-      markup_message = ""
+      markup_message = ''
 
       patches.each do |patch|
         file_extension = patch.file.split(//).last(2).join
