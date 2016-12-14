@@ -31,13 +31,16 @@ end
 def resolve_diff(diff_str)
   # Parse all patches from diff string
   patches = GitDiffParser.parse(diff_str)
-
+  markdown patches.length
   markup_message = ''
 
+
+
   patches.each do |patch|
-    file_extension = patch.file.split(//).last(2).join
-    binding.pry
-    if file_extension != '.m' && file_extension != '.h'
+    # file_extension = patch.file.split(//).last(2).join
+    # binding.pry
+    unless patch.file.end_with?(".m", ".h", ".mm")
+    # if file_extension != '.m' && file_extension != '.h'
       next
     end
 
