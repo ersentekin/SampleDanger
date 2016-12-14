@@ -4,4 +4,3 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'git_diff_parser'
-gem 'pry'
