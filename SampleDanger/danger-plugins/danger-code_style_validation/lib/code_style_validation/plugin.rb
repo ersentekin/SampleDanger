@@ -48,8 +48,8 @@ module Danger
 
       patches.each do |patch|
         file_extension = patch.file.split(//).last(2).join
-        
-        unless %w(.m .h).include? file_extension
+
+        if file_extension != '.m' && file_extension != '.h'
           next
         end
 
