@@ -47,6 +47,12 @@ module Danger
       markup_message = ""
 
       patches.each do |patch|
+        file_extension = patch.file.split(//).last(2).join
+        
+        unless %w(.m .h).include? file_extension
+          next
+        end
+
         changed_lines_command_array = []
 
         patch.changed_line_numbers.each do |line_number|

@@ -4,5 +4,3 @@ markdown "###plugin test"
 
 # Warn when there is a big PR
 warn("Big PR") if git.lines_of_code > 1
-
-markdown_for_code_style_violation
