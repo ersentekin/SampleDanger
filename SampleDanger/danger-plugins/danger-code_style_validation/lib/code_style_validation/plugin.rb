@@ -20,31 +20,6 @@ module Danger
   # @tags monday, weekends, time, rattata
   #
   class DangerCodeStyleValidation < Plugin
-
-    # An attribute that you can read/write from your Dangerfile
-    #
-    # @return   [Array<String>]
-    attr_accessor :my_attribute
-
-    # A method that you can call from your Dangerfile
-    # @return   [Array<String>]
-    #
-
-    def markdown_for_code_style_violation
-      diff = ''
-      case danger.scm_provider
-      when :github
-        diff = github.pr_diff
-      when :gitlab
-        diff = gitlab.mr_diff
-      when :bitbucket_server
-        diff = bitbucket_server.pr_diff
-      end
-
-      message = resolve_diff(diff)
-      markdown message unless message.empty?
-    end
-
     def generate_markdown(title, content)
       markup_message = "####" + title + "\n"
       markup_message += "```\n" + content + "\n``` \n"
@@ -90,6 +65,21 @@ module Danger
       end
 
       markup_message
+    end
+
+    def markdown_for_code_style_violation
+      diff = ''
+      case danger.scm_provider
+      when :github
+        diff = github.pr_diff
+      when :gitlab
+        diff = gitlab.mr_diff
+      when :bitbucket_server
+        diff = bitbucket_server.pr_diff
+      end
+
+      message = resolve_diff(diff)
+      markdown message unless message.empty?
     end
   end
 end
